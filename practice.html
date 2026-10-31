@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mern Stack Documentt</title>
+    <style>
+        img{
+            width: 500px;
+            height: 500px;
+            border: 5px solid black;
+            margin-top: 10px;
+        }
+        button{
+            padding: 5px 10px;
+            background: #000;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="myButton">class="my button"Click Me</button>
+    <img id="myImage" class="image"s src="../../../nature.png" alt="Image">
+    <script>
+        //Button click event
+        const button=document.getElementById("myButton");
+        button.addEve…<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mern Stack Documentt</title>
+    <style>
+        img{
+            width: 500px;
+            height: 500px;
+            border: 5px solid black;
+            margin-top: 10px;
+        }
+        button{
+            padding: 5px 10px;
+            background: #000;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="myButton">Click Me</button><br>
+    <img id="myImage" src="../../../nature.png" alt="Image">
+    <script>
+        //Button click event
+        const button=document.getElementById("myButton");
+        button.addEventListener('click',()=>{
+            console.log('Button clicked!');
+        });
+        //image mouseover event
+        const image=document.getElementById('myImage');
+        image.addEventListener('mouseover',()=>{
+            image.style.borderColor='red';
+        })
+        //keydown event for document
+        document.addEventListener('keydown',(event)=>{
+            console.log('Key pressed:${event.key}');
+        });
+    </script>
+</body>
+</html>
